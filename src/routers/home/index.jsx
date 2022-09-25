@@ -13,7 +13,7 @@ function App() {
   const [ toSymbol, setToSymbol ] = useState("BTC")
 
   const [ feerate, setFeerate ] = useState(1)
-  const [ feeBaseSat, setFeeBaseSat ] = useState(0)
+  const [ feeBaseSat, setFeeBaseSat ] = useState(10)
 
   const [ address, setAddress ] = useState("")
   const [ info, setInfo ] = useState({})
@@ -24,7 +24,7 @@ function App() {
   const ln_swap = new LNSwap(import.meta.env.VITE_LN_SWAP_API);
   
   function calculateFee(amount) {
-    var fee_btc = (amount * info.SERVICE_FEE_RATE / 100)
+    var fee_btc = (amount * info.SERVICE_FEE_RATE / 10)
     if (fee_btc < info.SERVICE_MIN_FEE_RATE) {
       fee_btc = info.SERVICE_MIN_FEE_RATE
     }
