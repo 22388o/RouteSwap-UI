@@ -7,10 +7,10 @@ import "./styles.css"
 
 function App() {  
   const [ fromAmount, setFromAmount ] = useState(0)
-  const [ fromSymbol, setFromSymbol ] = useState("LN")
+  const [ fromSymbol, setFromSymbol ] = useState("Bitcoin⚡️ ")
 
   const [ toAmount, setToAmount ] = useState(0)
-  const [ toSymbol, setToSymbol ] = useState("BTC")
+  const [ toSymbol, setToSymbol ] = useState("Bitcoin")
 
   const [ feerate, setFeerate ] = useState(1)
   const [ feeBaseSat, setFeeBaseSat ] = useState(10)
