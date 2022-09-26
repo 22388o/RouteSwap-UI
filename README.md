@@ -1,8 +1,8 @@
-# LN Swap (UI)
+# Route Swap ⚡️ 
 
 ![](./img/demo.png)
 
-A simple UI to interact with LN-SWAP backend.
+A simple UI to interact with Route Swap backend.
 
 ## Setup:
 
