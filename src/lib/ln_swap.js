@@ -26,10 +26,11 @@ class LNSwap {
         return this.call("GET", `/api/v1/tx/${txid}`)
     }
 
-    create_loop_out(amount, address, feerate) {
+    create_loop_out(amount, address, feerate,lnurl) {
         const data = {
             "amount":  amount,
             "address": address,
+            "lnurl":   lnurl,
             "feerate": feerate
         }
         return this.call("POST", "/api/v1/loop/out", data)
