@@ -132,7 +132,7 @@ function App() {
               </p>
             )
           }
-          <input className="range" type="range" disabled={toSymbol == "LN"} min="1" max="100" value={feerate} onChange={(e) => setFeerate(e.target.value)}/>
+          <input className="range" type="range" disabled={toSymbol == "Bitcoin⚡️"} min="1" max="100" value={feerate} onChange={(e) => setFeerate(e.target.value)}/>
         </div>
         
         <button 
